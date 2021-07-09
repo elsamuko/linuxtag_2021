@@ -3,7 +3,9 @@ set(CURRENT_TARGET windows)
 add_executable(${CURRENT_TARGET}
     ${SRC_DIR}/windows/windows.cpp
     ${SRC_DIR}/windows/mybutton.cpp
+    ${SRC_DIR}/windows/mybutton.hpp
     ${SRC_DIR}/windows/mainwindow.cpp
+    ${SRC_DIR}/windows/mainwindow.hpp
     ${SRC_DIR}/windows/mainwindow.ui
 )
 

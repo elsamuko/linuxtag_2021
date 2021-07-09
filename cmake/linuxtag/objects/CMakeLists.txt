@@ -3,6 +3,7 @@ set(CURRENT_TARGET objects)
 add_executable(${CURRENT_TARGET}
     ${SRC_DIR}/objects/objects.cpp
     ${SRC_DIR}/objects/doessth.cpp
+    ${SRC_DIR}/objects/doessth.hpp
 )
 
 include(../../common.cmake)

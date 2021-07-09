@@ -3,6 +3,7 @@ set(CURRENT_TARGET widgets)
 add_executable(${CURRENT_TARGET}
     ${SRC_DIR}/widgets/widgets.cpp
     ${SRC_DIR}/widgets/clickme.cpp
+    ${SRC_DIR}/widgets/clickme.hpp
 )
 
 include(../../common.cmake)
