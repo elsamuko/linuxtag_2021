@@ -1,5 +1,5 @@
 target_compile_definitions(${CURRENT_TARGET} PRIVATE
-    -DLOG_FILENAME="linuxtag.log"
+    LOG_FILENAME="linuxtag.log"
 )
 
 target_sources(${CURRENT_TARGET} PRIVATE
