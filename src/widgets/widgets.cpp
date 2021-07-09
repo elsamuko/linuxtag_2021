@@ -2,8 +2,8 @@
 #include <QDebug>
 #include <QTimer>
 
-#include "log.hpp"
 #include "clickme.hpp"
+#include "log.hpp"
 
 void logQt( QtMsgType /*type*/, const QMessageLogContext& ctx, const QString& msg ) {
     const char* file = ctx.file ? ctx.file : "qt";

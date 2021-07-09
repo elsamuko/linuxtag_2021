@@ -1,7 +1,7 @@
 #include "mybutton.hpp"
 
-#include <QPainter>
 #include <QDebug>
+#include <QPainter>
 
 MyButton::MyButton( QWidget* parent ) : QPushButton( parent ) {
     qDebug() << "MyButton!";

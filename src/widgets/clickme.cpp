@@ -1,7 +1,7 @@
 #include "clickme.hpp"
 
-#include <QPushButton>
 #include <QDebug>
+#include <QPushButton>
 
 ClickMe::ClickMe( QWidget* parent ) : QWidget( parent ) {
 

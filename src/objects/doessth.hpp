@@ -4,16 +4,16 @@
 #include <QObject>
 
 class DoesSth : public QObject {
-        Q_OBJECT
-    public:
-        explicit DoesSth( QObject* parent = nullptr );
+    Q_OBJECT
+  public:
+    explicit DoesSth( QObject* parent = nullptr );
 
-    signals:
-        void signalReady();
-    public slots:
+  signals:
+    void signalReady();
+  public slots:
 
-    public:
-        void doSth();
+  public:
+    void doSth();
 };
 
 #endif // DOESSTH_HPP

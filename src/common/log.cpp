@@ -1,27 +1,27 @@
 #include "log.hpp"
 
-#include <iostream>
+#include <chrono>
+#include <cstring>
 #include <fstream>
 #include <iomanip>
-#include <chrono>
-#include <thread>
+#include <iostream>
 #include <mutex>
-#include <cstring>
+#include <thread>
 
 #ifndef _WIN32
-#include <unistd.h>
 #include <sys/syscall.h>
+#include <unistd.h>
 #else
 #include <Windows.h>
 #endif
 
-namespace  {
+namespace {
 std::mutex m;
 std::string threadId() {
     std::stringstream ss;
     ss.width( 8 );
 #ifdef __APPLE__
-    uint64_t tid = 0;;
+    uint64_t tid = 0;
     pthread_threadid_np( nullptr, &tid );
 #endif
 #ifdef __linux__
@@ -33,7 +33,7 @@ std::string threadId() {
     ss << std::hex << tid;
     return ss.str();
 }
-}
+} // namespace
 
 Logger::Logger( const char* file, int line, const char* function ) {
     timestamp();

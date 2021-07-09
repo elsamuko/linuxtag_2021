@@ -4,15 +4,14 @@
 #include <QPushButton>
 
 class MyButton : public QPushButton {
-        Q_OBJECT
-    public:
-        explicit MyButton( QWidget* parent = nullptr );
+    Q_OBJECT
+  public:
+    explicit MyButton( QWidget* parent = nullptr );
 
-    protected:
-        virtual void paintEvent( QPaintEvent* ) override;
+  protected:
+    virtual void paintEvent( QPaintEvent* ) override;
 
-    signals:
-
+  signals:
 };
 
 #endif // MYBUTTON_HPP
