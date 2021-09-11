@@ -4,7 +4,7 @@ Linuxtag 2021
 
 ## Qt Creator
 * Compiler, Kits
-* clean, cmake, build
+* Tools -> Options -> Environment -> Keyboard: clear, cmake, build
 * Shortcuts
 * clang-format
 
