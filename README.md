@@ -10,6 +10,7 @@ Linuxtag 2021
 
 ## Projekte
 * Neues Projekt anlegen "hello"
+* targets "Current executable"
 * Projektaufbau
   * add_executable()
   * target_sources()
