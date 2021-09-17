@@ -7,6 +7,11 @@ add_executable(${CURRENT_TARGET}
     ${SRC_DIR}/windows/mainwindow.cpp
     ${SRC_DIR}/windows/mainwindow.hpp
     ${SRC_DIR}/windows/mainwindow.ui
+    ../windows/windows.qrc
+)
+
+target_include_directories(${CURRENT_TARGET} PUBLIC
+    ${SRC_DIR}/windows
 )
 
 include(../../common.cmake)

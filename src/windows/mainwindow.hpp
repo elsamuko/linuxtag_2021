@@ -15,7 +15,12 @@ class MainWindow : public QMainWindow {
     ~MainWindow();
 
   private slots:
+
     void on_pushButton_clicked();
+
+    void on_actionQuit_triggered();
+
+    void on_pushButton_2_clicked();
 
   private:
     Ui::MainWindow* ui;
